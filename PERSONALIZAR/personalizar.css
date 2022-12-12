@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@300&display=swap'); 
+body{
+    margin: 0;
+    background-color: rgb(128, 196, 252);
+}
+body, html{
+    height: 100%;
+}
+/*div.cima{
+    background-color: rgb(146, 23, 184);
+    width: auto;
+    height: 70px;
+    color: rgba(255, 241, 45, 0.952);
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 25pt;
+    display: flex;
+    align-items: center;
+    padding-left: 40%;
+}
+img.seta{
+    width: 25px;
+    height:30px;
+    margin-left: 20px;
+    margin-top: 25px;
+    float: left;
+}*/
+div#capa{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    margin-left: 7%;
+    margin-top: 2%;
+    box-sizing: border-box;   
+    align-items: center;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Poppins', serif;
+    font-size: 35px;
+    float: left;
+    border-radius: 10px;
+
+}
+div.personalizar{
+    background-color: white;
+    width: 560px;
+    height: 587px;
+    float: right;
+    margin-top: 2%;
+    margin-right: 7%;
+}
+div.cores{
+    width: auto;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+}
+div.cor{
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    float: left;
+    margin-left: 25.5px;
+    margin-top: -20px;
+}
+.cores :hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#azul{
+    background-color: #44c4ff;
+}
+#amarelo{
+    background-color: #008080;
+}
+#roxo{
+    background-color:#00c6c7;
+}
+#rosa{
+    background-color: #c4ffff;
+}
+#vermelho{
+    background-color: #00cbcc;
+}
+#verde{
+    background-color: #295872;
+}
+#escolha{
+    font-family: 'Poppins', serif;
+    font-size: 30px;
+    margin-left: 21px;
+}
+.font{
+    background-color: rgb(255, 240, 102);  /*Posição da imagem do background*/
+    width: 445px;
+    font-family: 'Poppins', serif;
+    font-size: 25px;
+    resize: none;
+    overflow: hidden;;
+    background-color: rgb(49, 78, 245)/*rgb(217, 93, 255)*/;
+    border: 0;
+    height: 40px;
+    padding-left: 20px;
+    color: white;
+    margin-left: 15px;
+}
+#fontes{
+    font-family: 'Poppins', serif;
+    font-size: 30px;
+    margin-top: -15px;
+    margin-left: 21px;
+    width: 500px;
+}
+#artigo{
+    font-family: 'Poppins', serif;
+    font-size: 30px;
+    margin-left: 21px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+#arquivo{
+    width: 410px;
+    font-family: 'Poppins', serif;
+    font-size: 25px;
+    resize: none;
+    overflow: hidden;;
+    background-color: rgb(49, 78, 245);
+    border: 0;
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 20px;
+    color: white;
+
+}
+#mensagem{
+    border-radius: 20px;
+    width: 475px;
+    height: 45px;
+    background-color: rgb(49, 78, 245);
+    margin-top: 15px;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+#font_pos{
+    border-radius: 20px;
+    width: 475px;
+    height: 45px;
+    background-color: rgb(49, 78, 245);
+    margin-top: 15px;
+}
+#tamanho{
+    border-radius: 20px;
+    width: 475px;
+    height: 45px;
+    background-color: rgb(49, 78, 245);
+    margin-top: 15px;
+}
+
+/*body{
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}*/
+
+#ajuda{
+    position: fixed;
+    flex: 1 1 auto;
+    margin-left: 1220px;
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    border-radius: 8px;
+    background-image: linear-gradient(to right,  rgb(255, 0, 0) 5%,   #ca0202 51%, rgb(255, 0, 0) 100%);
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    border: 0;
+    box-shadow:2px 2px 2px rgb(255, 255, 255);
+}
+#ajuda:hover {
+    background-position: right center; /* change the direction of the change here */
+    transform: scale(1.08);
+    transition: 0.5s;
+} 
+button:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+#logotipo_box{
+    position: fixed;
+    margin-top: -10px;
+    z-index: 1;
+}
+#logotipo{
+    width: 100px;
+    padding-left: 90px;  
+}
+#barra{
+    font: 15pt century;
+    background-color: rgb(130, 42, 165); /* rgb(144, 26, 223) */
+    color: seashell;
+    width: 100%;
+    height: 70px;
+    line-height: 200px;
+    text-align: center;
+    position: fixed;
+}
+#logo{
+    width: 55px;
+    margin-left: 20px;
+    margin-top: 7.5px;
+    float: left;
+    border-radius: 50%;
+}
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 10vw;
+    margin: 0 auto;
+    min-height: 89.4vh;
+    height: 90px;
+    flex-direction: column;
+    margin-top: 70px;
+    line-height: 90px;
+}
+section {
+    display: flex;
+    float: left;
+}
+#envia{
+    width: 25px;
+    height: 25px;
+    padding-bottom: 9px;
+    filter: invert(100%);
+}
+#documento{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 120px;
+}
+#doc{
+    position: fixed;
+    top: 267px;
+    right: 10px;
+}
+
+  
+#button-6 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-6 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    color: #fff;
+  }
+  .arrow{
+    margin-right: 10px;
+  }
+  #spin {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: 50px;
+    top: 80px;
+    transform: rotate(0deg);
+    background: none;
+    position: absolute;
+    transition: all .5s ease-Out;
+  }
+  
+  #button-6:hover #spin {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    left: -30px;
+    top: -20px;
+    background: #ffffff;
+    transform: rotate(80deg);
+  }
+  
+  #button-6:hover a {
+    color: #2f9eab;
+    font-weight: bold;
+    font-family: 'Cinzel';
+  }
+  
+  
+  
+  
+  
+  .button {
+    display: inline-flex;
+    height: 90px;
+    width: 250px;
+    border: 2px solid #ffffff;
+    margin: 80px 40px 40px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 210px;
+    margin-top: 10px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+
+  
+#auxilio {
+    display: none;
+    position: fixed;
+    right: 130px;
+    top: 8px;
+    background-color: rgb(250, 61, 61);
+    color: white;
+    z-index: 1;
+    border-radius: 10px;
+    width: 240px;
+    height: 75px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    box-shadow:2px 2px 8px purple;
+   }
+#ajudar{
+    text-align: center;
+    width: 100%;
+}
+.opc{
+    transition: background-color 0.5s;
+}
+.opc:hover{
+    background-color:rgba(150, 0, 0, 0.466);
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#duvidas{
+    position: absolute;
+    right: 165px;
+    top: 0px;
+    flex: 1 1 auto;
+    left: 1152px;
+    margin-top: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    border-radius: 50px;
+    background-image: linear-gradient(to right,  rgb(216, 106, 253) 5%,  rgb(175, 145, 185) 100%);
+    font-family: 'Zilla Slab', serif;
+    font-size: 30px;
+    border: 0;
+    box-shadow:2px 2px 2px rgb(233, 190, 247);
+}
+#duvidas:hover {
+    background-position: right center; /* change the direction of the change here */
+    transform: scale(1.08);
+    transition: 0.5s;
+}  
+a:link {
+
+    text-decoration: none;}
+    
+a:visited {
+    
+    color: #F5FFFA;}
+    
+a:active {
+    
+    color: #F5FFFA;}
+#sair{
+    width: 30px;
+}
+#seta{
+    position: absolute;
+    left: 40px;
+    top: 35px;
+    transition: 0.5s;
+    width: 50px;
+}
+#seta:hover{
+    transform: scale(1.08);
+    transition: 0.5;
+}
+#duvida {
+    display: none;
+    position: fixed;
+    right: 70px;
+    top: 70px;
+    background-color: rgba(255, 255, 255, 0.74);
+    z-index: 2;
+    border-radius: 10px;
+    width: 240px;
+    height: 140px;
+    font-family: 'Zilla Slab', serif;
+    box-shadow:2px 2px 8px purple;
+    }
+#tabela{
+    text-align: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    font-size: 18px;
+}
+.opcoes{
+    transition: background-color 0.5s;
+}
+.opcoes:hover{
+    background-color:rgba(212, 0, 255, 0.466);
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.opcoes a:visited{
+    color: black;
+}

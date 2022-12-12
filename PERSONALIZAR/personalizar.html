@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONALIZAR</title>
+    <link rel="stylesheet" href="personalizar.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+    </style>
+    <script type="text/javascript" src="personalizar.js"></script>
+</head>
+<body>
+
+   <div id="seta">
+        <a href="../feed/feed.html"> <img class="arrow" src="SETA.png" alt="" id="sair"> </a>
+    </div>
+  
+    <div id="capa" class="frase">
+        <p id="capa_texto">SEU TEXTO VAI APARECER AQUI</p>
+    </div>
+    <div class="personalizar">
+        <p id="escolha">Escolha uma cor de fundo: </p>
+        <div class="cores">
+            <div class="cor" id="azul" onclick="azul()"></div>
+            <div class="cor" id="amarelo" onclick="amarelo()"></div>
+            <div class="cor" id="roxo" onclick="roxo()"></div>
+            <div class="cor" id="rosa" onclick="rosa()"></div>
+            <div class="cor" id="vermelho" onclick="vermelho()"></div>
+            <div class="cor" id="verde" onclick="verde()"></div>
+        </div>
+        <div id="artigo">
+            Nome da capa: </br>
+            <div id="mensagem">
+                <textarea class="arquivo" name="arquivo" id="arquivo"></textarea>
+                <img src="imagens/enviar.png" alt="" id="envia" onclick="aplicar();">
+            </div>
+        </div>
+   
+	</br>
+        <div id="fontes">
+            Escolha uma fonte:
+            <div id="font_pos">
+                <select name="fonte"  id="fonte" class="font" onChange="mudaFonte()">
+                    <option value="Courier,sans-serif">Courier New</option>
+                    <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin Gothic Medium</option>
+                    <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Gill Sans</option>
+                    <option value="Lucida Sans">Lucida Sans</option>
+                    <option value="Segoe UI">Segoe UI</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Century Gothic,CenturyGothic,AppleGothic,sans-serif">Century Gothic</option>
+                </select>
+            </div>
+			<br/>
+			Escolha um tamanho
+			<div id="tamanho">
+                <select name="tam"  id="tam" class="font" onChange="mudaTamanho()">
+                    <option value="110%">10</option>
+                    <option value="115%">15</option>
+                    <option value="120%">20</option>
+					<option value="130%">30</option>
+					<option value="140%">40</option>
+					<option value="150%">50</option>
+				</select>
+            </div>
+        </div>
+       
+        
+    </div> 
+    <div class="button" id="button-6">
+        <div id="spin"></div>
+        <a href="../feed/feed.html">Postar</a>
+      </div>                 </div>
+   
+</body>
+</html>
